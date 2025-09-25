@@ -8,5 +8,5 @@ export const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, { basename: "/Buraco-Negro" });
 export default router;
