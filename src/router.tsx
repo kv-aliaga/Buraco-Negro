@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainView from "./views/MainView";
+import Home from "./views/Home";
 
 export const routes = [
   {
     path: "/",
-    element: <MainView />,
+    element: <Home />,
   },
 ];
 
