@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: sans-serif, Inter;
   color: var(--text-color);
+  margin: 0;
 
   background: var(--primary-deep-blue) url('/public/images/black-hole1.png') no-repeat fixed bottom right;
 }
