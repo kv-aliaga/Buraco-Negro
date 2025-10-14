@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../components/Header/Header";
 
 const MainView: React.FC = () => {
   return (
     <>
-      <h1>Página Inicial</h1>
+      <Header links={[{ url: "/simulation", displayName: "Simulação" }]} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores
         soluta, tempore sunt maiores explicabo. Harum velit natus qui nemo
