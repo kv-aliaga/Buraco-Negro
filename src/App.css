@@ -1,0 +1,12 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--text-color);
+
+  background: var(--primary-deep-blue) url('/public/images/black-hole1.png') no-repeat fixed bottom right;
+}
