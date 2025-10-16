@@ -5,7 +5,7 @@ header {
   top: 0;
   left: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 
   padding: 20px;
 }
@@ -23,10 +23,7 @@ header nav>ul {
 
 header li {
   padding-right: 20px;
-
-  &::marker {
-    font-size: 2em;
-  }
+  list-style: none;
 }
 
 header a {
@@ -34,4 +31,8 @@ header a {
   text-decoration: inherit;
   font-style: italic;
   font-size: 35px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
