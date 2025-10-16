@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 
-const SimulationView: React.FC = () => {
+const Simulation: React.FC = () => {
   return (
     <>
       <Header links={[{ url: "/", displayName: "Home" }]} />
@@ -9,4 +9,4 @@ const SimulationView: React.FC = () => {
   );
 };
 
-export default SimulationView;
+export default Simulation;

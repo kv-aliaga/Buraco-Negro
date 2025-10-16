@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./views/Home/Home";
-import SimulationView from "./views/Simulation/SimulationView";
+import Simulation from "./views/Simulation/Simulation";
 
 export const routes = [
   {
@@ -9,7 +9,7 @@ export const routes = [
   },
   {
     path: "/simulation",
-    element: <SimulationView />,
+    element: <Simulation />,
   },
 ];
 
