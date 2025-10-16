@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./views/Home";
+import Home from "./views/Home/Home";
 import SimulationView from "./views/SimulationView";
 
 export const routes = [
@@ -8,9 +8,9 @@ export const routes = [
     element: <Home />,
   },
   {
-    path: '/simulation',
-    element: <SimulationView />
-  }
+    path: "/simulation",
+    element: <SimulationView />,
+  },
 ];
 
 const router = createBrowserRouter(routes, { basename: "/Buraco-Negro" });
