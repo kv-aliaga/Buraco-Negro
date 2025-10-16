@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./views/Home/Home";
-import SimulationView from "./views/SimulationView";
+import SimulationView from "./views/Simulation/SimulationView";
 
 export const routes = [
   {
