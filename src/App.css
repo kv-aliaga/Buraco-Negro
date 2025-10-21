@@ -20,6 +20,10 @@ body {
   padding: 25px 100px;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p {
   text-align: justify;
   text-indent: 20px;
