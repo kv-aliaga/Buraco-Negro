@@ -11,23 +11,25 @@
 
   & section {
     padding: 20px;
-    margin: 20px;
     border-radius: 20px;
   }
 
   & #simulator {
     grid-area: clas;
     background-color: var(--secondary-orange);
+    margin: 0 20px 0 0;
   }
 
   & #controller-area {
     grid-area: ctrl;
     background-color: var(--primary-dark-magenta);
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    margin: 0 0 20px 20px;
   }
 
   & #explanation-area {
     grid-area: expl;
     background-color: var(--primary-dark-pink);
+    margin: 20px 0 0 20px;
   }
 }
