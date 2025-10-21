@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import Simulator from "../../components/Simulator/Simulator";
 import "./Simulation.css";
+import Explanation from "../../components/Explanation/Explanation";
 
 const Simulation: React.FC = () => {
   const [radius, setRadius] = useState(696_340);
@@ -69,16 +70,7 @@ const Simulation: React.FC = () => {
 
         <section id="explanation-area">
           <h3>Explicação</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus commodi ducimus nemo nesciunt reprehenderit nulla a
-            fuga doloremque eligendi adipisci recusandae modi dolorem,
-            accusantium itaque ipsam corporis animi dicta suscipit? Corporis
-            veritatis suscipit, cumque iure quaerat ex, dolorum placeat dolore
-            quis ullam quo. Aliquam praesentium, facere assumenda voluptatum
-            sed, debitis aperiam similique rem sapiente fuga voluptatibus
-            excepturi maxime, eveniet illo?
-          </p>
+          <Explanation />
         </section>
       </main>
     </div>
