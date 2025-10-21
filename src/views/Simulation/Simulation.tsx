@@ -30,48 +30,47 @@ const Simulation: React.FC = () => {
       <Header links={[{ url: "/", displayName: "Home" }]} />
 
       <main id="simulation-container" className="container">
-        <Simulator radius={radius} mass={mass} />
+        <h2>Simulação</h2>
 
-        <section id="controller-area">
-          <h3>Controles</h3>
-
-          <div>
-            <label htmlFor="mass-input">Massa: </label>
-            <input
-              type="range"
-              id="mass-input"
-              value={mass}
-              min={1e30}
-              max={1e33}
-              step={1e29}
-              onChange={(t) => updateState(t.target, setMass)}
-            />
-            <span> = {formatted(mass / 1e27)} Zt</span>
-          </div>
-
-          <div>
-            <label htmlFor="radius-input">Raio: </label>
-            <input
-              type="range"
-              id="radius-input"
-              value={radius}
-              min={4e4}
-              max={1e6}
-              step={1e3}
-              onChange={(t) => updateState(t.target, setRadius)}
-            />
-            <span> = {formatted(radius)} km</span>
-          </div>
-
-          <p>
-            Densidade: {formatted(density)} Tt/km<sup>3</sup>
-          </p>
-        </section>
-
-        <section id="explanation-area">
-          <h3>Explicação</h3>
-          <Explanation />
-        </section>
+        <div>
+          <Simulator radius={radius} mass={mass} />
+          <section id="controller-area">
+            <h3>Controles</h3>
+            <div>
+              <label htmlFor="mass-input">Massa: </label>
+              <input
+                type="range"
+                id="mass-input"
+                value={mass}
+                min={1e30}
+                max={1e33}
+                step={1e29}
+                onChange={(t) => updateState(t.target, setMass)}
+              />
+              <span> = {formatted(mass / 1e27)} Zt</span>
+            </div>
+            <div>
+              <label htmlFor="radius-input">Raio: </label>
+              <input
+                type="range"
+                id="radius-input"
+                value={radius}
+                min={4e4}
+                max={1e6}
+                step={1e3}
+                onChange={(t) => updateState(t.target, setRadius)}
+              />
+              <span> = {formatted(radius)} km</span>
+            </div>
+            <p>
+              Densidade: {formatted(density)} Tt/km<sup>3</sup>
+            </p>
+          </section>
+          <section id="explanation-area">
+            <h3>Explicação</h3>
+            <Explanation />
+          </section>
+        </div>
       </main>
     </>
   );
