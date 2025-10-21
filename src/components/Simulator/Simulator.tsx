@@ -12,7 +12,9 @@ const Simulator: React.FC<SimulatorProps> = ({ radius, mass }) => {
 
   return (
     <section id="simulator">
-      <h2>Classificação: {isBlackHole ? "Buraco Negro" : "Estrela"}</h2>
+      <h3 style={{ fontSize: "2rem", marginTop: 0 }}>
+        Classificação: {isBlackHole ? "Buraco Negro" : "Estrela"}
+      </h3>
 
       <div id="simulation-area">
         <svg>
