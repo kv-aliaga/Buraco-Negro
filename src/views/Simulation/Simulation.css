@@ -1,0 +1,33 @@
+#simulation-container {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "clas ctrl"
+    "clas expl";
+
+  & section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  & #simulator {
+    grid-area: clas;
+    background-color: var(--secondary-orange);
+  }
+
+  & #controller-area {
+    grid-area: ctrl;
+    background-color: var(--primary-dark-magenta);
+    color: var(--secondary-text-color)
+  }
+
+  & #explanation-area {
+    grid-area: expl;
+    background-color: var(--primary-dark-pink);
+  }
+}

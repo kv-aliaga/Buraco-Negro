@@ -1,4 +1,5 @@
 import React from "react";
+import "./Simulator.css";
 
 export type SimulatorProps = {
   radius: number;
@@ -11,14 +12,13 @@ const Simulator: React.FC<SimulatorProps> = ({ radius, mass }) => {
 
   return (
     <section id="simulator">
-      <h2>Classificação:</h2>
-      <p>{isBlackHole ? "Buraco Negro" : "Estrela"}</p>
+      <h2>Classificação: {isBlackHole ? "Buraco Negro" : "Estrela"}</h2>
 
       <div id="simulation-area">
-        <svg width="100%" height="100%">
+        <svg>
           <circle
-            cx="200"
-            cy="200"
+            cx="50%"
+            cy="50%"
             r={radius / Math.pow(10, 3.8)}
             fill={isBlackHole ? "black" : "yellow"}
             stroke={isBlackHole ? "orange" : "none"}
