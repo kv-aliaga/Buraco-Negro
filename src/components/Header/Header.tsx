@@ -6,18 +6,16 @@ export type HeaderProps = {
   links: [{ url: string; displayName: string }];
 };
 
-const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
-  const links: React.ReactElement[] = props.links.map((l) => (
-    <Link to={l.url}>{l.displayName}</Link>
-  ));
-
+const Header: React.FC<HeaderProps> = ({ links }) => {
   return (
     <header>
       <h1>Buracos Negros</h1>
       <nav>
         <ul>
-          {links.map((l) => (
-            <li>{l}</li>
+          {links.map(({ url, displayName }) => (
+            <li key={url}>
+              <Link to={url}>{displayName}</Link>
+            </li>
           ))}
         </ul>
       </nav>
