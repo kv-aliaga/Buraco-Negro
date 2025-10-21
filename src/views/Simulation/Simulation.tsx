@@ -26,10 +26,10 @@ const Simulation: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <Header links={[{ url: "/", displayName: "Home" }]} />
 
-      <main id="simulation-container">
+      <main id="simulation-container" className="container">
         <Simulator radius={radius} mass={mass} />
 
         <section id="controller-area">
@@ -73,7 +73,7 @@ const Simulation: React.FC = () => {
           <Explanation />
         </section>
       </main>
-    </div>
+    </>
   );
 };
 

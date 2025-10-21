@@ -6,7 +6,7 @@ const MainView: React.FC = () => {
   return (
     <>
       <Header links={[{ url: "/simulation", displayName: "Simulação" }]} />
-      <main id="home-container">
+      <main id="home-container" className="container">
         <h2>O que são?</h2>
         <section>
           <p>
